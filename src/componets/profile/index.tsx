@@ -1,4 +1,4 @@
-import { Container, Image, ProfielData } from "./style";
+import { Container, Image, ProfielData, Link } from "./style";
 import useGithub from "../../hooks/github-hook";
 
 function Profile() {
@@ -15,9 +15,9 @@ function Profile() {
                     </a>
                     <p>
                         Blog:{" "}
-                        <a href={githubState.user.blog} target='_blank'>
+                        <Link href={githubState.user.blog} target='_blank'>
                             {githubState.user.blog}
-                        </a>
+                        </Link>
                     </p>
                     <p>Localização: {githubState.user.location}</p>
                     <p>

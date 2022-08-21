@@ -68,7 +68,6 @@ function GithubProvider({ children }: ChildrenType) {
 
     function getUserRepos(username: string) {
         api.get(`users/${username}/repos`).then(({ data }) => {
-            console.log("data: " + JSON.stringify(data));
             setGithubState((prev) => ({
                 ...prev,
                 repositories: data,
@@ -77,7 +76,7 @@ function GithubProvider({ children }: ChildrenType) {
     }
 
     function getUserStarred(username: string) {
-        api.get(`uers/${username}/starred`).then(({ data }) => {
+        api.get(`users/${username}/starred`).then(({ data }) => {
             setGithubState((prev) => ({
                 ...prev,
                 starred: data,

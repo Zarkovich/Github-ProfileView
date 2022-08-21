@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     #root{
-        height: 100vh;
+        min-height: 100vh;
 
         background-color: var(--background);
     }

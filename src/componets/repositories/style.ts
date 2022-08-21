@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0 10px;
 `;

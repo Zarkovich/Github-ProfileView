@@ -11,7 +11,7 @@ export const Container = styled.div`
 
     border-radius: 5px;
 
-    flex-basis: 100%;
+    width: 100%;
 `;
 
 export const Image = styled.img`
@@ -21,6 +21,16 @@ export const Image = styled.img`
     border-radius: 50%;
 
     object-fit: cover;
+`;
+
+export const Link = styled.a`
+    display: inline-block;
+
+    max-width: 90%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `;
 
 export const ProfielData = styled.div`
