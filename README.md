@@ -1,3 +1,3 @@
 # GitHub Profile View
 
-![Gif]('./../img/gif.gif')
+![Gif](./img/gif.gif)
